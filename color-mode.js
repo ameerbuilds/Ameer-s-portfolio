@@ -24,7 +24,7 @@ function saveColorMode() {
   const currentMode = root.classList.contains("dark-mode")
     ? "light-mode"
     : "dark-mode";
-  root.classList.remove("light-mode", "dark-mode");
+  root.classList.remove("light-mode", "light-mode");
   root.classList.add(currentMode);
   localStorage.setItem(storageKey, currentMode);
   updateToggleButton();
